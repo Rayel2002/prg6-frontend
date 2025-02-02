@@ -11,7 +11,7 @@ export default function InventoryReplaceModal() {
   useEffect(() => {
     async function fetchItem() {
       try {
-        const response = await fetch(`http://127.0.0.1:8000/inventory/${id}`, {
+        const response = await fetch(`http://145.24.222.50:8000/inventory/${id}`, {
           method: "GET",
           headers: { Accept: "application/json", "Content-Type": "application/json" },
         });
@@ -30,7 +30,7 @@ export default function InventoryReplaceModal() {
 
   async function handleSave(updatedItem) {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/inventory/${id}`, {
+      const response = await fetch(`http://145.24.222.50:8000/inventory${id}`, {
         method: "PUT",
         headers: { Accept: "application/json", "Content-Type": "application/json" },
         body: JSON.stringify(updatedItem),

@@ -7,7 +7,7 @@ export default function InventoryCreateModal() {
 
   async function handleSave(newItem) {
     try {
-      const response = await fetch("http://127.0.0.1:8000/inventory/", {
+      const response = await fetch("http://145.24.222.50:8000/inventory/", {
         method: "POST",
         headers: {
           Accept: "application/json",

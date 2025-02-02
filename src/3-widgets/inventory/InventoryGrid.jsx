@@ -20,7 +20,7 @@ export default function InventoryGrid() {
     async function fetchInventory() {
       try {
         const response = await fetch(
-          `http://127.0.0.1:8000/inventory?start=${
+          `http://145.24.222.50:8000/inventory?start=${
             (currentPage - 1) * itemsPerPage
           }&limit=${itemsPerPage}`,
           {
