@@ -30,7 +30,7 @@ export default function InventoryReplaceModal() {
 
   async function handleSave(updatedItem) {
     try {
-      const response = await fetch(`http://145.24.222.50:8000/inventory${id}`, {
+      const response = await fetch(`http://145.24.222.50:8000/inventory/${id}`, {
         method: "PUT",
         headers: { Accept: "application/json", "Content-Type": "application/json" },
         body: JSON.stringify(updatedItem),

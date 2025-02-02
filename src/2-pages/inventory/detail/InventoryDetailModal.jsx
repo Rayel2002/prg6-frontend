@@ -51,7 +51,7 @@ export default function InventoryDetailModal() {
 
     try {
       setIsDeleting(true);
-      const response = await fetch(`http://127.0.0.1:8000/inventory/${id}`, {
+      const response = await fetch(`http://145.24.222.50:8000/inventory/${id}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json",
